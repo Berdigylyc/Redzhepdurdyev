@@ -40,5 +40,5 @@ ax.legend(shadow = False)
 
 pyplot.show()
 
-#fig.savefig('graph.png')
-#fig.savefig('graph.svg')
+fig.savefig('graph.png')
+fig.savefig('graph.svg')
