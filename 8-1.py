@@ -23,11 +23,22 @@ ax.grid(which='minor', color = 'gray', linestyle = ':' )
 ax.set_ylabel("voltage, (V)")
 ax.set_xlabel("time, (s)")
 
-ax.plot(data_time, data, c='black', linewidth=1, label = 'V(t)')
+ax.plot(data_time, data, c='blue', linewidth=1, label = 'V(t)')
 ax.scatter(data_time[0:data.size:20],data[0:data.size:20], marker = 's', c = 'blue', s=10)
 
-ax.legend(shadow = False, loc = 'right', fontsize = 30)
+ax.legend(shadow = False)
+
+ax.plot(data_time, data, c='blue', linewidth=1, label = 'charging time is 4.21s')
+ax.scatter(data_time[0:data.size:20],data[0:data.size:20], marker = 's', c = 'blue', s=10)
+
+ax.legend(shadow = False)
+
+ax.plot(data_time, data, c='blue', linewidth=1, label = 'discharging time is 5.65s')
+ax.scatter(data_time[0:data.size:20],data[0:data.size:20], marker = 's', c = 'blue', s=10)
+
+ax.legend(shadow = False)
+
 pyplot.show()
 
-fig.savefig('graph.png')
-fig.savefig('graph.svg')
+#fig.savefig('graph.png')
+#fig.savefig('graph.svg')
